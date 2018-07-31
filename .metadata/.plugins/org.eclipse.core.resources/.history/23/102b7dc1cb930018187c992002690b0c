@@ -1,0 +1,34 @@
+package com.statckroute.code;
+
+interface Comm{
+	public float area(float a);
+	public float perimeter(float a);
+}
+
+abstract class Area implements Comm{
+	@Override
+	public float area(float a) {
+		// TODO Auto-generated method stub
+		return a*a;
+	}
+	
+	public float area(float a, float b) {
+		return a*b;
+	}
+}
+
+abstract class Perimeter implements Comm{
+	@Override
+	public float perimeter(float a) {
+		// TODO Auto-generated method stub
+		return 4*a;
+	}
+	
+	public float perimeter(float a, float b) {
+		return 2*(a+b);
+	}
+}
+
+public class DynPoly {
+
+}

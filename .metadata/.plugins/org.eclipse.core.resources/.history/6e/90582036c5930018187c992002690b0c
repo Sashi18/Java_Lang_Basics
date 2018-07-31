@@ -1,0 +1,8 @@
+package com.statckroute.code;
+import static java.lang.System.*;
+
+public class StaticImp {
+	public static void main(String [] args) {
+		out.println("Static class or methods are not needed to be mentioned");
+	}
+}

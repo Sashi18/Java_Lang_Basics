@@ -1,0 +1,13 @@
+package com.statckroute.code;
+
+public class StatNested {
+	public static void main(String [] args) {
+		System.out.println(Nested.mul(15, 5));
+	}
+	
+	static class Nested{
+		static int mul(int a, int b) {
+			return a*b;
+		}
+	}
+}

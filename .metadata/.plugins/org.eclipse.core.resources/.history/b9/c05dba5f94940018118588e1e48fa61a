@@ -1,0 +1,42 @@
+package com.stackroute.PE1;
+
+import java.util.*;
+
+class Functions{
+	boolean isPallindrome(String x) {
+		StringBuilder a = new StringBuilder();
+		a.append(x);
+		String b = a.reverse().toString();
+		if(x.equals(b))
+			return true;
+		return false;
+	}
+	
+	boolean sumCheck(String x, int c) {
+		long long n = Integer.parseInt(x);
+		int sum = 0;
+		while(n > 0) {
+			if((n%10)%2 == 0)
+				sum += n%10;
+			n /= 10;
+		}
+		if(sum > c)
+			return true;
+		return false;
+	}
+}
+
+public class Ex1 {
+	public static void main(String [] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		sc.close();
+		Functions ob = new Functions();
+		if(ob.isPallindrome(n) && ob.sumCheck(n, 25))
+			System.out.println(n+" is a Pallindrome and sum is greater than 25");
+		else if(ob.isPallindrome(n) || ob.sumCheck(n, 25))
+			System.out.println(n+" is a Pallindrome and sum is than 25");
+		else
+			System.out.println("String is not a Pallindrome");
+	}
+}

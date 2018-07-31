@@ -1,0 +1,17 @@
+package com.stackroute.PE1;
+
+import java.util.*;
+
+public class Ex9 {
+	public static void main(String [] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		sc.close();
+		String [] s = str.split("");
+		Vector<String> v = new Vector<String>();
+		for(int i = s.length-1;i >= 0;i--) {
+			v.add(s[i]);
+		}
+		System.out.println(v.toString());
+	}
+}

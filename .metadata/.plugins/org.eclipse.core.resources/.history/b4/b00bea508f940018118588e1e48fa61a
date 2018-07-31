@@ -1,0 +1,26 @@
+package com.stackroute.PE1;
+
+import java.util.*;
+
+class Functions{
+	boolean isPallindrome(String x) {
+		StringBuilder a = new StringBuilder();
+		a.append(x);
+		StringBuilder b = a.reverse();
+		if(a === b)
+			return true;
+		return false;
+	}
+}
+
+public class Ex1 {
+	public static void main(String [] args) {
+		Scanner sc = new Scanner(System.in);
+		String n = sc.next();
+		Functions ob = new Functions();
+		if(ob.isPallindrome(n))
+			System.out.println("String is a Pallindrome");
+		else
+			System.out.println("String is not a Pallindrome");
+	}
+}

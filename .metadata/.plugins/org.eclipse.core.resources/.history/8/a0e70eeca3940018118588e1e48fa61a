@@ -1,0 +1,18 @@
+package com.stackroute.PE1;
+
+import java.util.*;
+
+public class Ex6 {
+	public static void main(String [] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter an alphabet character");
+		String a = sc.next();
+		sc.close();
+		if(a.toCharArray()[0]>=65 && a.toCharArray()[0]<=90)
+			System.out.println("Small Letter");
+		else if(a.toCharArray()[0]>=97 && a.toCharArray()[0]<=122)
+			System.out.println("Capital Letter");
+		else 
+			System.out.println("Error");
+	}
+}

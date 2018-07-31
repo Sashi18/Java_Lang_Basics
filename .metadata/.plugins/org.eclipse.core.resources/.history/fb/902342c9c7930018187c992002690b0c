@@ -1,0 +1,22 @@
+package com.statckroute.code;
+
+class Encaps{
+	private int a = 5;
+	private float b = 5.5f;
+	
+	int getInt() {
+		return a;
+	}
+	
+	float getFloat() {
+		return b;
+	}
+}
+
+public class Encapsulation {
+	public static void main(String [] args) {
+		Encaps ob = new Encaps();
+		System.out.println(ob.getInt());
+		System.out.println(ob.getFloat());
+	}
+}

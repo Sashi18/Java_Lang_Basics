@@ -1,0 +1,14 @@
+package com.statckroute.code;
+
+public class StatNested {
+	public static void main(String [] args) {
+		StatNested.Nested ob = new StatNested.Nested();
+		System.out.println(ob.mul(15, 5));
+	}
+	
+	static class Nested{
+		int mul(int a, int b) {
+			return a*b;
+		}
+	}
+}

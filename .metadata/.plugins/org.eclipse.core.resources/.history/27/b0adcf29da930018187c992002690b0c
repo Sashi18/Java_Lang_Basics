@@ -1,0 +1,13 @@
+package com.statckroute.code;
+import java.lang.String;
+
+public class StrMethods {
+	public static void main(String [] args) {
+		String str = "This is a String";
+		String [] s = str.split("s", 5);
+		for(String a : s)
+			System.out.println(a);
+		String q = "      Hi  Hello     ";
+		System.out.println(q.trim());
+	}
+}

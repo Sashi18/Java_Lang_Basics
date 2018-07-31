@@ -1,0 +1,56 @@
+package com.statckroute.code;
+
+abstract class Building{
+	abstract void fan();
+	abstract void AC();
+	void room() {
+		System.out.println("Rooms are open");
+	}
+	void parking() {
+		System.out.println("Parking Area is open");
+	}
+}
+
+abstract class Room extends Building{
+	abstract void table();
+	abstract void chairs();
+	@Override
+	void fan() {
+		// TODO Auto-generated method stub
+		System.out.println("Fans are working");
+	}
+
+	@Override
+	void AC() {
+		// TODO Auto-generated method stub
+		System.out.println("Ac is working");
+	}
+}
+
+class CandT extends Room{
+
+	@Override
+	void table() {
+		// TODO Auto-generated method stub
+		System.out.println("Tables are present");
+	}
+
+	@Override
+	void chairs() {
+		// TODO Auto-generated method stub
+		System.out.println("Chairs are present");
+	}
+	
+}
+
+public class Inher {
+	public static void main(String [] args) {
+		CandT ob = new CandT();
+		ob.parking();
+		ob.room();
+		ob.chairs();
+		ob.table();
+		ob.AC();
+		ob.fan();
+	}
+}
